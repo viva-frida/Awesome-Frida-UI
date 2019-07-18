@@ -1,0 +1,8 @@
+.DS_Store
+.vscode/
+awesome-frida-ui/
+node_modules/
+.gitignore/
+untitled/db.sqlite3/
+untitled/venv/
+
