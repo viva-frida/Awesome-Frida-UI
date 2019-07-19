@@ -6,7 +6,11 @@ this tool for beginner, and make easier to use this, this tool was under develop
 The project base on [Frida-RE](https://www.frida.re),[create-react-app](https://github.com/facebook/create-react-app),[Ant Design](https://github.com/ant-design/ant-design),[Django](https://github.com/django/django)<br>
 
 ## UI
+<<<<<<< HEAD
 ![UI](https://github.com/viva-frida/Awesome--Frida-UI/blob/master/Image/UI.jpg)
+=======
+![UI](https://github.com/viva-frida/Awesome--Frida-UI/blob/master/src/assets/image/home.jpg)
+>>>>>>> 766dd115d7d7865759b29a7f4647e3566ead2b2c
 
 ## Document
 If you were Chinese, please click it [中文文档](https://github.com/viva-frida/Awesome--Frida-UI/blob/master/%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3.md).<br/>
