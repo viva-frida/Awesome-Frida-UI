@@ -9,10 +9,10 @@ The project base on [Frida-RE](https://www.frida.re),[create-react-app](https://
 ![UI](https://github.com/viva-frida/Awesome--Frida-UI/blob/master/Image/UI.jpg)<br/>
 
 ## Hook Example：
-![Hook](https://github.com/viva-frida/awesome-frida-ui/blob/master/Image/Hook-Example.png)<br>
+![Hook](https://github.com/viva-frida/Awesome--Frida-UI/blob/master/Image/Hook-Example.png)<br>
 
 ## Trace Example：
-![Tracer](https://github.com/viva-frida/awesome-frida-ui/blob/master/Image/Tracer-Example.png)<br>
+![Tracer](https://github.com/viva-frida/Awesome--Frida-UI/blob/master/Image/Tracer-Example.png)<br>
 
 
 ## Document
