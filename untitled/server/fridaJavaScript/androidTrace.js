@@ -94,7 +94,7 @@ function traceMethod(targetClassMethod)
 	var hook = Java.use(targetClass);
 	var overloadCount = hook[targetMethod].overloads.length;
 
-	console.log("Tracing " + targetClassMethod + " [" + overloadCount + " overload(s)]");
+	send("Tracing " + targetClassMethod + " [" + overloadCount + " overload(s)]");
 
 	for (var i = 0; i < overloadCount; i++) {{
 
@@ -104,18 +104,18 @@ function traceMethod(targetClassMethod)
 			// print backtrace
 			// Java.perform(function() {{
 			//	var bt = Java.use("android.util.Log").getStackTraceString(Java.use("java.lang.Exception").$new());
-			//	console.log("\nBacktrace:\n" + bt);
+			//	send("\nBacktrace:\n" + bt);
 			// }});   
 
 			// print args
-			if (arguments.length) console.log();
+			if (arguments.length) send();
 			for (var j = 0; j < arguments.length; j++) {{
-				console.log("arg[" + j + "]: " + arguments[j]);
+				send("arg[" + j + "]: " + arguments[j]);
 			}}
 
 			// print retval
 			var retval = this[targetMethod].apply(this, arguments); // rare crash (Frida bug?)
-			console.log("\nretval: " + retval);
+			send("\nretval: " + retval);
 			console.warn("\n*** exiting " + targetClassMethod);
 			return retval;
 		}}
@@ -125,7 +125,7 @@ function traceMethod(targetClassMethod)
 // trace Module functions
 function traceModule(impl, name)
 {{
-	console.log("Tracing " + name);
+	send("Tracing " + name);
 
 	Interceptor.attach(impl, {{
 
@@ -142,7 +142,7 @@ function traceModule(impl, name)
 				console.warn("\n*** entered " + name);
 
 				// print backtrace
-				console.log("\nBacktrace:\n" + Thread.backtrace(this.context, Backtracer.ACCURATE)
+				send("\nBacktrace:\n" + Thread.backtrace(this.context, Backtracer.ACCURATE)
 						.map(DebugSymbol.fromAddress).join("\n"));
 			}}
 		}},
@@ -151,7 +151,7 @@ function traceModule(impl, name)
 
 			if (this.flag) {{
 				// print retval
-				console.log("\nretval: " + retval);
+				send("\nretval: " + retval);
 				console.warn("\n*** exiting " + name);
 			}}
 		}}

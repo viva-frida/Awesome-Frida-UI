@@ -6,7 +6,13 @@ this tool for beginner, and make easier to use this, this tool was under develop
 The project base on [Frida-RE](https://www.frida.re),[create-react-app](https://github.com/facebook/create-react-app),[Ant Design](https://github.com/ant-design/ant-design),[Django](https://github.com/django/django)<br>
 
 ## UI
-![UI](https://github.com/viva-frida/Awesome--Frida-UI/blob/master/Image/UI.jpg)
+![UI](https://github.com/viva-frida/Awesome--Frida-UI/blob/master/Image/UI.jpg)<br/>
+
+## Hook Example：
+![Hook](https://github.com/viva-frida/awesome-frida-ui/blob/master/Image/Hook-Example.png)<br>
+
+## Trace Example：
+![Tracer](https://github.com/viva-frida/awesome-frida-ui/blob/master/Image/Tracer-Example.png)<br>
 
 
 ## Document

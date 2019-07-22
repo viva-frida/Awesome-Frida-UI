@@ -105,25 +105,25 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="js" value="57" />
+          <entry key="js" value="58" />
           <entry key="py" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JavaScript" value="57" />
+          <entry key="JavaScript" value="58" />
           <entry key="Python" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="1501" />
+          <entry key="js" value="1513" />
           <entry key="py" value="2487" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="1501" />
+          <entry key="JavaScript" value="1513" />
           <entry key="Python" value="2487" />
         </counts>
       </usages-collector>
@@ -131,11 +131,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="216" column="86" selection-start-line="216" selection-start-column="86" selection-end-line="216" selection-end-column="86" />
+            <state relative-caret-position="394">
+              <caret line="212" column="24" selection-start-line="212" selection-start-column="24" selection-end-line="212" selection-end-column="24" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
                 <marker date="1563432550539" expanded="true" signature="460:662" ph="..." />
@@ -145,6 +145,15 @@
                 <marker date="1563432550539" expanded="true" signature="5382:6677" ph="..." />
                 <marker date="1563432550539" expanded="true" signature="7653:7654" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/fridaJavaScript/androidTrace.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="121">
+              <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
             </state>
           </provider>
         </entry>
@@ -232,14 +241,14 @@
       <find>INSTALLED_APPS</find>
       <find>ALLOWED_HOSTS</find>
       <find>TEMPLATES</find>
-      <find>console.log</find>
       <find>{</find>
       <find>}</find>
+      <find>console.log</find>
     </findStrings>
     <replaceStrings>
-      <replace>send</replace>
       <replace>{{</replace>
       <replace>}}</replace>
+      <replace>send</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -255,7 +264,6 @@
         <option value="$PROJECT_DIR$/untitled/settings.py" />
         <option value="$PROJECT_DIR$/server/fridaJavaScript/inlineHook.js" />
         <option value="$PROJECT_DIR$/server/fridaJavaScript/nativeHook.js" />
-        <option value="$PROJECT_DIR$/server/fridaJavaScript/androidTrace.js" />
         <option value="$PROJECT_DIR$/server/fridaJavaScript/orUnpack.js" />
         <option value="$PROJECT_DIR$/server/fridaJavaScript/adNativeHook.js" />
         <option value="$PROJECT_DIR$/server/fridaJavaScript/adInlineHook.js" />
@@ -275,6 +283,7 @@
         <option value="$PROJECT_DIR$/untitled/urls.py" />
         <option value="$PROJECT_DIR$/server/views.py" />
         <option value="$PROJECT_DIR$/server/views.py" />
+        <option value="$PROJECT_DIR$/server/fridaJavaScript/androidTrace.js" />
       </list>
     </option>
   </component>
@@ -307,6 +316,12 @@
               <item name="WebServer" type="b2602c69:ProjectViewProjectNode" />
               <item name="untitled" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="untitled" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="fridaJavaScript" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -461,12 +476,12 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25641027" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25641027" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32857144" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.498779" visible="true" weight="0.37448978" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.498779" visible="true" weight="0.37448978" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3987952" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -623,13 +638,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/fridaJavaScript/androidTrace.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="597">
-          <caret line="153" column="30" selection-start-line="153" selection-start-column="30" selection-end-line="153" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/fridaJavaScript/orJavaHook.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -782,8 +790,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="216" column="86" selection-start-line="216" selection-start-column="86" selection-end-line="216" selection-end-column="86" />
+        <state relative-caret-position="394">
+          <caret line="212" column="24" selection-start-line="212" selection-start-column="24" selection-end-line="212" selection-end-column="24" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
             <marker date="1563432550539" expanded="true" signature="460:662" ph="..." />
@@ -793,6 +801,13 @@
             <marker date="1563432550539" expanded="true" signature="5382:6677" ph="..." />
             <marker date="1563432550539" expanded="true" signature="7653:7654" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/fridaJavaScript/androidTrace.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
         </state>
       </provider>
     </entry>
