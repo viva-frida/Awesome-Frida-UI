@@ -6,6 +6,8 @@ import 'antd/dist/antd.css'
 import axios from 'axios';
 import Qs from 'qs';
 import Info from '../data/dataList';
+import Footer from '../data/processData';
+
 
 class  EnumerateExports  extends React.Component{
     state = {
@@ -49,7 +51,7 @@ class  EnumerateExports  extends React.Component{
 
     render(){
         return(
-            <div key='/enumerateExports' style={{ border: "1px solid black", height: 450, width: 800, }} visiable={this.state.visiable}>
+            <div key='/enumerateExports'  >
                             <Input addonBefore="ModuleName:" value={this.state.modulename} onChange={e => this.setState({
                                 modulename: e.target.value
                             })} style={{ width: 600 }} size={"large"} />
@@ -60,6 +62,9 @@ class  EnumerateExports  extends React.Component{
                                 <div>{this.state.enumExportsresp}</div>
                                 <Info/>
                                
+                            </div>
+                            <div>
+                                <Footer/>
                             </div>
                         </div>
 

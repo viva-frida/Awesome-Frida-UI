@@ -6,6 +6,8 @@ import 'antd/dist/antd.css'
 import axios from 'axios';
 import Qs from 'qs';
 import Info from '../data/dataList';
+import Footer from '../data/processData';
+
 
 class  AndroidTrace  extends React.Component{
     state = {
@@ -49,7 +51,7 @@ class  AndroidTrace  extends React.Component{
 
     render(){
         return(
-            <div key='/androidTrace' style={{ border: "1px solid black", height: 450, width: 800, }} visiable={this.state.visiable}>
+            <div key='/androidTrace'  >
                             <Input addonBefore="ProcessName:" value={this.state.processname} onChange={e => this.setState({
                                 processname: e.target.value
                             })} style={{ width: 600 }} size={"large"} />
@@ -64,6 +66,9 @@ class  AndroidTrace  extends React.Component{
                                 <div>{this.state.traceresp}</div>
                                 <Info/>
                                
+                            </div>
+                            <div>
+                                <Footer/>
                             </div>
                         </div>
 

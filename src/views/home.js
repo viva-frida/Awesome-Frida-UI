@@ -1,6 +1,8 @@
 import React from 'react'
 import imgUrl from '../assets/image/home.jpg';
 
+
+
 let homeMsg = {
 	position:"relative",
 	zIndex:"10",
@@ -25,7 +27,7 @@ let homeBG = {
 class Home extends React.Component {
 	render() {
 		return (
-			<div >
+			<div key='/'>
 				<div style={homeBG}></div>
 
 				<div style={homeMsg}>

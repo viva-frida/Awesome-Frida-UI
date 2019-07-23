@@ -6,6 +6,8 @@ import 'antd/dist/antd.css'
 import axios from 'axios';
 import Qs from 'qs';
 import Info from '../data/dataList';
+import Footer from '../data/processData';
+
 
 class  FindExportByName  extends React.Component{
     state = {
@@ -52,7 +54,7 @@ class  FindExportByName  extends React.Component{
 
     render(){
         return(
-            <div key='/findExportByName' style={{ border: "1px solid black", height: 450, width: 800, }} visiable={this.state.visiable}>
+            <div key='/findExportByName'  >
                             <Input addonBefore="ModuleName:" value={this.state.modulename} onChange={e => this.setState({
                                 modulename: e.target.value
                             })} style={{ width: 600 }} size={"large"} />
@@ -67,6 +69,7 @@ class  FindExportByName  extends React.Component{
                                 <Info/>
                                
                             </div>
+                            <Footer/>
                         </div>
 
         );

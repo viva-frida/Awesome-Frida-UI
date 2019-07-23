@@ -6,6 +6,8 @@ import 'antd/dist/antd.css'
 import axios from 'axios';
 import Qs from 'qs';
 import Info from '../data/dataList';
+import Footer from '../data/processData';
+
 
 class  IosFuncHook  extends React.Component{
     state = {
@@ -54,7 +56,7 @@ class  IosFuncHook  extends React.Component{
 
     render(){
         return(
-            <div key='/advancedJavaHook' style={{ border: "1px solid black", height: 450, width: 800, }} visiable={this.state.visiable}>
+            <div key='/advancedJavaHook'  >
                             <Input addonBefore="ProcessName:" value={this.state.processname} onChange={e => this.setState({
                                 processname: e.target.value
                             })} style={{ width: 600 }} size={"large"} />
@@ -75,6 +77,9 @@ class  IosFuncHook  extends React.Component{
                                 <div>{this.state.hkresp}</div>
                                 <Info/>
                                
+                            </div>
+                            <div>
+                                <Footer/>
                             </div>
                         </div>
 

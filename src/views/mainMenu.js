@@ -1,15 +1,16 @@
 import React from 'react';
-import {Menu, Button, Icon, Input, Table} from 'antd';
+import {Menu, Icon} from 'antd';
 import '../index.css';
 import 'antd/dist/antd.css'
-import {HashRouter , Route , Link, Switch} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 const { SubMenu } = Menu;
+export * from '../Router/config';
+
 
 class MainMenu extends React.Component{
     state = {
         theme: 'dark',
         current: '1',
-        visiable: false,
         customize: false,
         
     };
@@ -38,7 +39,7 @@ class MainMenu extends React.Component{
                     defaultOpenKeys={['sub1']}
                     mode="inline"
                 >
-                    <Menu.Item>
+                    <Menu.Item key='1'>
                         <span>Home</span>
                         <Link to='/'/>
                     </Menu.Item>
@@ -55,21 +56,21 @@ class MainMenu extends React.Component{
                     >
 
                         <Menu.ItemGroup key="g1" title="Ordinary Hook" >
-                            <Menu.Item key="1"  >
+                            <Menu.Item key="2"  >
                                 Java Hook
                                 <Link to = '/ordinaryJavaHook' />
                             </Menu.Item>
-                            <Menu.Item key="2"  >
+                            <Menu.Item key="3"  >
                                 Native Hook
                                 <Link to = '/ordinaryNativeHook' />
                                 </Menu.Item>
                         </Menu.ItemGroup>
                         <Menu.ItemGroup key="g2" title="Advanced Hook">
-                            <Menu.Item key="3" >
+                            <Menu.Item key="4" >
                                 Java Hook
                                 <Link to = '/advancedJavaHook' />
                                 </Menu.Item>
-                            <Menu.Item key="4" >
+                            <Menu.Item key="5" >
                                 Native Hook
                                 <Link to = '/advancedNativeHook' />
                                 </Menu.Item>
@@ -85,10 +86,10 @@ class MainMenu extends React.Component{
                             </span>
                         }
                     >
-                        <Menu.Item key="5" >
+                        <Menu.Item key="6" >
                             Stack Trace
                             </Menu.Item>
-                        <Menu.Item key="6" >
+                        <Menu.Item key="7" >
                             Android Tracer
                             <Link to = '/androidTracer' />
                             </Menu.Item>
@@ -103,11 +104,11 @@ class MainMenu extends React.Component{
                             </span>
                         }
                     >
-                        <Menu.Item key="7" >
+                        <Menu.Item key="8" >
                             Ordinary Unpack
                             <Link to = '/ordinaryUnpack' />
                             </Menu.Item>
-                        <Menu.Item key="8" >
+                        <Menu.Item key="9" >
                             Advanced Unpack
                             <Link to = '/advancedUnpack' />
                             </Menu.Item>
@@ -124,56 +125,56 @@ class MainMenu extends React.Component{
                         }
                     >
                         <Menu.ItemGroup key="g3" title="Process Func" >
-                            <Menu.Item key="9"  >
+                            <Menu.Item key="10"  >
                                 enumerateModules
                                 <Link to='/enmuModules'/>
                                 </Menu.Item>
-                            <Menu.Item key="10"  >
+                            <Menu.Item key="11"  >
                                 findModuleByName
                                 <Link to='/findModuleByName'/>
                                 </Menu.Item>
                         </Menu.ItemGroup>
                         <Menu.ItemGroup key="g4" title="Module Func" >
-                            <Menu.Item key="11"  >
+                            <Menu.Item key="12"  >
                                 enumerateImports
                                 <Link to='/enumerateImports'/>
                                 </Menu.Item>
-                            <Menu.Item key="12"  >
+                            <Menu.Item key="13"  >
                                 enumerateExports
                                 <Link to='/enumerateExports'/>
                                 </Menu.Item>
-                            <Menu.Item key="13"  >
+                            <Menu.Item key="14"  >
                                 findExportByName
                                 <Link to='/findExportByName'/>
                                 </Menu.Item>
-                            <Menu.Item key="14"  >
+                            <Menu.Item key="15"  >
                                 findBaseAddress
                                 <Link to='/findBaseAddress'/>
                                 </Menu.Item>
                         </Menu.ItemGroup>
                         <Menu.ItemGroup key="g5" title="Memory Func" >
-                            <Menu.Item key="15"  >
+                            <Menu.Item key="16"  >
                                 scan
                                 </Menu.Item>
-                            <Menu.Item key="16"  >
+                            <Menu.Item key="17"  >
                                 alloc
                                 </Menu.Item>
                         </Menu.ItemGroup>
                         <Menu.ItemGroup key="g6" title="Java Function" >
-                            <Menu.Item key="17"  >
+                            <Menu.Item key="18"  >
                                 enumerateLoadedClasses
                                 <Link to='/enumerateLoadedClasses'/>
                                 </Menu.Item>
-                            <Menu.Item key="18"  >
+                            <Menu.Item key="19"  >
                                 enumerateClassLoaders
                                 <Link to='/enumerateClassLoaders'/>
                                 </Menu.Item>
                         </Menu.ItemGroup>
                         <Menu.ItemGroup key="g7" title="Interceptor Func" >
-                            <Menu.Item key="19"  >
+                            <Menu.Item key="20"  >
                                 attach
                                 </Menu.Item>
-                            <Menu.Item key="20"  >
+                            <Menu.Item key="21"  >
                                 replace
                                 </Menu.Item>
                         </Menu.ItemGroup>
@@ -188,13 +189,12 @@ class MainMenu extends React.Component{
                             </span>
                         }
                     >
-                        <Menu.Item key="21" >
+                        <Menu.Item key="22" >
                             IOS Func Hook
                             <Link to = '/iosFuncHook' />
                             </Menu.Item>
-                        <Menu.Item key="22" >
+                        <Menu.Item key="23" >
                             Unknow
-                            <Link to />
                             </Menu.Item>
 
 

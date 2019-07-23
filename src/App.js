@@ -5,7 +5,6 @@ import 'antd/dist/antd.css';
 import {Layout } from 'antd';
 import MainMenu from './views/mainMenu';
 import ContentMain from './Router/router';
-import Footer from './data/processData';
 
 const {
 	Sider, Content,
@@ -22,13 +21,10 @@ class App extends Component {
 							<MainMenu/>
 						</Sider>
 						<Layout>
-							{/*<Header>Header</Header>*/}
 							<Content className="App-contentMain" style={{height:screenHeight}}>
 								<ContentMain/>
-                <Footer/>
 							</Content>
               
-							{/*<Footer>Footer</Footer>*/}
 						</Layout>
 					</Layout>
 				</BrowserRouter>
