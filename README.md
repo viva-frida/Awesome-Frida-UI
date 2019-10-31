@@ -33,7 +33,7 @@ Then you need to install the create-react-app,and move the project to that fold 
 [create-react-app](https://ant.design/docs/react/use-with-create-react-app-cn)<br>
 
 Make sure the above steps are correct, next you need to execute the command:<br/>
-        npm install websocket-drivier<br>
+        npm install websocket-driver<br>
         npm install axios<br>
         npm install<br>
         npm start<br>
